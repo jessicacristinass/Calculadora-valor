@@ -1,0 +1,48 @@
+body {
+    font-size: 15pt;
+    background-color: #fbcb2c;
+}
+
+#Tela{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#centro{
+  height: 100%;
+  width: 100%;
+}
+
+.separa{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input[type="number"]{
+  width: 15%;
+  font-size: 30px;
+  text-align: center;
+}
+
+button{
+  font-size: 30px;
+  width: 50%;
+  background-color: #e61508;
+  border:3px solid black;
+  border-radius: 10px;
+  color: white;
+}
+
+img{
+  width: 100%;
+}
+
+hr{
+  background-color: black;
+  border-color: black;
+}

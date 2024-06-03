@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Salgados da Márcia</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="Tela">
+    <div id="centro">
+      <img src="./foto/1.jpg">
+      <center><h1>Salgados</h1><br><center>
+      <div class="separa">
+        <label for="Salgados">Salgados de R$1,50: </label><input id="salgados" type="number" value="0">
+      </div>
+      <div class="separa">
+        <label for="canudinho">3 Canudinhos: </label><input id="canudinho" type="number" value="0">
+      </div>
+      <div class="separa">
+        <label for="mini">10 mini salgados: </label><input id="mini" type="number" value="0">
+      </div>
+      
+      <hr>
+      
+      <center><h1>Refris</h1><br><center>
+      <div class="separa">
+        <label for="Refrizinho">Refrizinho 250ml: </label><input id="refri" type="number" value="0">
+      </div>
+      <div class="separa">
+        <label for="CocaLata">Coca Lata 350ml: </label><input id="coca" type="number" value="0">
+      </div>
+      <div class="separa">
+        <label for="Guaraná">Guaraná 1L: </label><input id="gua" type="number" value="0">
+      </div>
+      
+      <hr>
+      
+      <center><h1>Pastéis</h1><br><center>
+      <div class="separa">
+        <label for="queijo">Queijo: </label><input id="queijo" type="number" value="0">
+      </div>
+      <div class="separa">
+        <label for="misto">Misto: </label><input id="pmisto" type="number" value="0">
+      </div>
+      <div class="separa">
+        <label for="frango">Frango: </label><input id="frango" type="number" value="0">
+      </div>
+      
+      <hr>
+      
+      <div class="separa">
+        <button type="button" onclick="calc()">Calcular</button>
+        <div id="resp">Resposta...</div>
+      </div>
+      <button type="button" onclick="window.location.reload()">Limpar</button>
+    </div>
+  </div>
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>
