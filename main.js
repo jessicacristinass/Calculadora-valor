@@ -26,6 +26,14 @@ function calc() {
   let gua = document.getElementById("gua");
 
   gua = gua.value * 6;
+  
+  let agua = document.getElementById("agua");
+  
+  agua = agua.value * 2;
+  
+  let suco = document.getElementById("suco");
+  
+  suco = suco.value * 3;
 
 
 
@@ -42,15 +50,15 @@ function calc() {
   frango = frango.value * 8;
 
   let tsalg = parseFloat(salg) + parseFloat(canu) + parseFloat(mini);
-  let trefri = parseFloat(refri) + parseFloat(coca) + parseFloat(gua);
+  let trefri = parseFloat(refri) + parseFloat(coca) + parseFloat(gua) + parseFloat(agua) + parseFloat(suco);
   let tpas = parseFloat(quei) + parseFloat(pmisto) + parseFloat(frango);
   let total = parseFloat(tsalg) + parseFloat(trefri) + parseFloat(tpas);
   
-  let perc = parseFloat(total) * 0.05;
+  let perc = parseFloat(total) * 0.053;
   let cart = parseFloat(total) + parseFloat(perc);
 
   let res = document.getElementById("resp");
   res.innerHTML = "";
   res.style.backgroundColor = 'white';
-  res.innerHTML = "Salgados: R$" + tsalg + "<br>Refris: R$" + trefri + "<br>Pastéis: R$" + tpas + "<br><br>Total: R$" + total.toFixed(2) + "<br><br>Cartão: R$" + cart.toFixed(2);
+  res.innerHTML = "Salgados: R$" + tsalg + "<br>Bebidas: R$" + trefri + "<br>Pastéis: R$" + tpas + "<br><br>Total: R$" + total.toFixed(2) + "<br><br>Cartão: R$" + cart.toFixed(2);
 }
